@@ -142,7 +142,7 @@ header:hover {
 }
 
 .dark {
-  background-color: #1f1f1f;
+  background-color: rgb(3, 6, 96);
   color: white;
 }
 
@@ -184,7 +184,7 @@ header:hover {
 }
 
 .project-card {
-  background-color: #2c2c2c;
+ background-color: #12317a;
   color: white;
   border-radius: 12px;
   padding: 1.5rem;
