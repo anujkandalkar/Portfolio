@@ -2,15 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anuj Kandalkar | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
-    <div class="container">
+    <div class="container nav">
       <h1 class="logo">Anuj Kandalkar</h1>
       <nav>
         <ul class="nav-links">
@@ -19,53 +19,55 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="menu-icon" id="menu-icon">☰</div>
+        <span class="menu-icon" onclick="toggleMenu()">☰</span>
       </nav>
     </div>
   </header>
 
-  <section class="hero" id="aboutme">
-    <div class="container">
-      <div class="hero-content">
-        <h1>Hello, I’m <span>Anuj Kandalkar</span></h1>
-        <h3>Full Stack Developer | MERN Stack Enthusiast</h3>
-        <p>I design and develop clean, responsive, and user-centric web applications. My passion lies in transforming ideas into powerful digital experiences using modern technologies.</p>
-        <a href="#projects" class="btn btn-primary">View My Projects</a>
-      </div>
+  <section id="about" class="hero">
+    <img src="Anuj_image.png" alt="Anuj Kandalkar" class="profile-pic">
+    <h1>Hi, I'm Anuj Kandalkar</h1>
+    <h3>Full Stack Developer | MERN Stack Enthusiast</h3>
+    <p>I design and develop clean, responsive, and user-centric web applications. My passion lies in transforming ideas into powerful digital experiences using modern technologies.</p>
+    <div>
+      <a href="#projects" class="btn">View My Projects</a>
+      <a href="#contact" class="btn">Let's Connect</a>
     </div>
   </section>
 
-  <section id="skills" class="section">
+  <section id="aboutme" class="section">
     <div class="container">
-      <h2>About Me</h2>
-      <p>I’m a final-year Computer Engineering student with a deep interest in Full Stack Web Development. I enjoy building innovative, scalable, and efficient solutions using the MERN stack. With strong problem-solving abilities, leadership experience, and a continuous learning mindset, I aim to contribute meaningfully to real-world projects and development teams.</p>
+      <h2 id="A">About Me</h2>
+      <p>
+        I’m a final-year <strong>Computer Engineering</strong> student with a deep interest in <strong>Full Stack Web Development</strong>. I enjoy building innovative, scalable, and efficient solutions using the <strong>MERN stack</strong>. With strong problem-solving abilities, leadership experience, and a continuous learning mindset, I aim to contribute meaningfully to real-world projects and development teams.
+      </p>
     </div>
   </section>
 
-  <section class="section dark">
+  <section id="skills" class="section dark">
     <div class="container">
-      <h2>Skills</h2>
+      <h2>Skills & Technologies</h2>
+      <p>A comprehensive toolkit for building modern, scalable applications.</p>
       <div class="skills-grid">
-        <p><strong>Languages:</strong> <br> Java, Python</p>
-        <p><strong>Web Development:</strong> HTML5, CSS, Tailwind CSS, Bootstrap, JavaScript, MERN Stack</p>
-        <p><strong>Database:</strong> MySQL, MongoDB</p>
-        <p><strong>Tools:</strong> <br> Git, GitHub</p>
+        <span>Java</span><span>Python</span><span>HTML</span><span>CSS</span><span>Tailwind</span><span>Bootstrap</span>
+        <span>JavaScript</span><span>PHP</span><span>ReactJS</span><span>NodeJS</span><span>MySQL</span>
+        <span>MongoDB</span><span>Git</span><span>GitHub</span>
       </div>
     </div>
   </section>
 
   <section id="education" class="section">
     <div class="container">
-      <h2>Education</h2>
-      <ul>
+      <h2 id="A">Education</h2>
+      <ul class="education-list">
         <li><strong>Trinity College of Engineering and Research</strong><br>B.E. in Computer Engineering | CGPA: 8.64 (2022 – Present)</li>
-        <li><strong>Shri Gurudeo Data Vidyalaya</strong><br>HSC | 81.17% (2021 – 2022)</li>
+        <li><strong>Shri Gurudeo Datt Vidyalaya</strong><br>HSC | 81.17% (2021 – 2022)</li>
         <li><strong>New English School, Kawathe</strong><br>SSC | 82.80% (2019 – 2020)</li>
       </ul>
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <section id="projects" class="section dark">
     <div class="container">
       <h2>Projects</h2>
       <div class="project-card">
@@ -74,32 +76,76 @@
         <a href="https://github.com/anujkandalkar/AICTE-EY-P4" target="_blank">View Project</a>
       </div>
       <div class="project-card">
-        <h3>HealthEase</h3>
+        <h3>HealthConnect</h3>
         <p>A full-featured healthcare portal allowing patients to book appointments and view reports, while doctors manage records and follow-ups.</p>
         <a href="https://github.com/anujkandalkar/HealthConnect" target="_blank">View Project</a>
       </div>
     </div>
   </section>
 
-  <section id="achievements" class="section">
+  <section id="resume" class="section">
+    <div class="container" style="text-align:center;">
+      <h2 id="A">Download Resume</h2>
+      <p>You can download my latest resume using the button below:</p>
+      <a href="Anuj_Kandalkar_Resume1.pdf" download class="btn" style="display:inline-block;margin-top:1.5rem;">
+        📄 Download
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="section dark">
     <div class="container">
-      <h2>Achievements</h2>
-      <ul>
-        <li>2nd Runner-Up in Technical Project Exhibition at Innovation Fest 2024 (Vishwakarma University)</li>
-      </ul>
+      <h2>Let's Connect</h2>
+      <p>I'm always open to new opportunities, collaborations, or just a friendly tech chat. Let’s build something amazing!</p>
+      <div class="contact-grid">
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:kandalkaranuj35@gmail.com">kandalkaranuj35@gmail.com</a>
+        </div>
+        <div>
+          <h4>Phone</h4>
+          <a href="tel:8600494579">+91 8600494579</a>
+        </div>
+        <div>
+          <h4>GitHub</h4>
+          <a href="https://github.com/anujkandalkar" target="_blank">anujkandalkar</a>
+        </div>
+        <div>
+          <h4>LinkedIn</h4>
+          <a href="https://www.linkedin.com/in/anuj-kandalkar-241499260/" target="_blank">anuj-kandalkar</a>
+        </div>
+      </div>
+      <form action="https://formspree.io/f/mnnvekdp" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">🚀 Send Message</button>
+      </form>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      <p>
-        <strong>Contact:</strong><br>
-        Anuj Kandalkar<br>
-        +91 8600494579<br>
-        kandalkaranuj35@gmail.com
-      </p>
+<p>&copy; 2025 Anuj Kandalkar | Web Developer!</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const section = document.querySelector(href);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
