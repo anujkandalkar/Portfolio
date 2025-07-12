@@ -1,4 +1,4 @@
-
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -184,7 +184,7 @@ header:hover {
 }
 
 .project-card {
- background-color: #12317a;
+  background-color: #12317a;
   color: white;
   border-radius: 12px;
   padding: 1.5rem;
